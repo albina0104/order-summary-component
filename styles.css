@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --pale-blue-shadow: hsl(225, 100%, 90%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-shadow: hsla(245, 75%, 52%, 0.2);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --font: 'Red Hat Display', sans-serif;
+
+    --space: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    font-family: var(--font);
+}
+
+.card {
+    width: min(450px, 100% - 48px);
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px var(--pale-blue-shadow);
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__details {
+    padding: 25px;
+}
+
+.card__h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--dark-blue);
+    padding-bottom: var(--space);
+}
+
+.card__desc {
+    text-align: center;
+    color: var(--desaturated-blue);
+    padding-bottom: var(--space);
+    line-height: 1.5em;
+}
+
+.card__plan-block {
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    background-image: url(images/icon-music.svg);
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+    padding: 20px 15px 20px 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space);
+}
+
+.card__plan {
+    color: var(--desaturated-blue);
+    font-size: 0.885rem;
+    line-height: 1.5em;
+}
+
+.card__plan strong {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+.link {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+.btn--proceed {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: var(--space);
+    box-shadow: 0 20px 20px var(--bright-blue-shadow);
+}
+
+.btn--cancel {
+    background-color: inherit;
+    color: var(--desaturated-blue);
+    margin-bottom: 5px;
+}
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 15px 0px;
+    color: var(--dark-blue);
+}
+
+.attribution a {
+    color: var(--bright-blue);
+}
