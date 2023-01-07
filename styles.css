@@ -5,6 +5,7 @@
     --pale-blue-shadow: hsl(225, 100%, 90%);
     --bright-blue: hsl(245, 75%, 52%);
     --bright-blue-shadow: hsla(245, 75%, 52%, 0.2);
+    --violet: hsl(245, 81%, 68%);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
@@ -94,6 +95,7 @@ body {
     color: var(--bright-blue);
     font-weight: 700;
     font-size: 0.8rem;
+    transition: .5s;
 }
 
 .btn {
@@ -104,6 +106,8 @@ body {
     font-weight: 800;
     font-size: 0.9rem;
     font-family: inherit;
+    cursor: pointer;
+    transition: .5s;
 }
 
 .btn--proceed {
@@ -130,4 +134,18 @@ body {
 
 .attribution a {
     color: var(--bright-blue);
+}
+
+@media (hover: hover) {
+    .link:hover, .attribution a:hover {
+        color: var(--violet);
+    }
+
+    .btn--proceed:hover {
+        background-color: var(--violet);
+    }
+
+    .btn--cancel:hover {
+        color: var(--dark-blue);
+    }
 }
