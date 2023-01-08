@@ -149,3 +149,40 @@ body {
         color: var(--dark-blue);
     }
 }
+
+@media screen and (min-width: calc(450px + 48px)) {
+    .card__details {
+        padding: 50px;
+    }
+
+    .card__h1 {
+        font-size: 1.7rem;
+    }
+
+    .card__desc {
+        font-size: 1.05rem;
+    }
+
+    .card__plan-block {
+        padding: 20px 20px 20px 88px;
+        background-position: center left 20px;
+    }
+
+    .card__plan {
+        font-size: 1.1rem;
+    }
+
+    .card__plan strong {
+        font-size: 1rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}
