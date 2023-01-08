@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned the following CSS properties for background positioning:
+- I learned the following CSS properties for background positioning:
 
 ```css
 background-repeat: no-repeat;
@@ -51,10 +51,19 @@ background-size: contain;
 
 background-position: center left 15px;
 ```
+- I learned how to add a pressed effect on button click in CSS:
+
+```css
+.btn:active, .link:active {
+    transform: scale(0.95);
+}
+```
 
 ### Useful resources
 
 - [CSS Backgrounds](https://www.w3schools.com/css/css3_backgrounds.asp) - This W3Schools tutorial helped me to choose the right properties for background positioning.
+
+- [How to add a pressed effect on button click in CSS?](https://www.geeksforgeeks.org/how-to-add-a-pressed-effect-on-button-click-in-css/)
 
 ## Author
 
