@@ -107,7 +107,7 @@ body {
     font-size: 0.9rem;
     font-family: inherit;
     cursor: pointer;
-    transition: .5s;
+    transition: .2s;
 }
 
 .btn--proceed {
@@ -148,6 +148,23 @@ body {
     .btn--cancel:hover {
         color: var(--dark-blue);
     }
+}
+
+.link:active, .attribution a:active {
+    color: var(--violet);
+}
+
+.btn:active, .link:active {
+    transform: scale(0.95);
+}
+
+.btn--proceed:active {
+    background-color: var(--violet);
+    box-shadow: 0 10px 10px var(--bright-blue-shadow);
+}
+
+.btn--cancel:active {
+    color: var(--dark-blue);
 }
 
 @media screen and (min-width: calc(450px + 48px)) {
