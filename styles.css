@@ -91,16 +91,8 @@ body {
     font-size: 0.9rem;
 }
 
-.link {
-    color: var(--bright-blue);
-    font-weight: 700;
-    font-size: 0.8rem;
-    transition: .5s;
-}
-
 .btn {
     display: block;
-    width: 100%;
     border: none;
     text-align: center;
     font-weight: 800;
@@ -108,6 +100,17 @@ body {
     font-family: inherit;
     cursor: pointer;
     transition: .2s;
+}
+
+.btn--wide {
+    width: 100%;
+}
+
+.btn--change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    background-color: inherit;
 }
 
 .btn--proceed {
@@ -137,7 +140,7 @@ body {
 }
 
 @media (hover: hover) {
-    .link:hover, .attribution a:hover {
+    .btn--change:hover, .attribution a:hover {
         color: var(--violet);
     }
 
@@ -150,12 +153,12 @@ body {
     }
 }
 
-.link:active, .attribution a:active {
-    color: var(--violet);
+.btn:active {
+    transform: scale(0.95);
 }
 
-.btn:active, .link:active {
-    transform: scale(0.95);
+.btn--change:active, .attribution a:active {
+    color: var(--violet);
 }
 
 .btn--proceed:active {
